@@ -1,6 +1,5 @@
 #!/usr/bin/python3
 
-
 import requests
 import time
 import random
@@ -33,7 +32,8 @@ def loadup():
 	mi = Time[4]
 	te1 = 36
 	te2 = random.randint(2,8)
-
+	
+	#打包数据包，数据均来自抓包
 	header = {'User-Agent':'Mozilla/5.0 (Linux; U; Android 6.0; zh-cn; Redmi Note 4 Build/MRA58K) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/61.0.3163.128 Mobile Safari/537.36 XiaoMi/MiuiBrowser/10.4.8','Accept':'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8','Referer':'http://219.246.21.225/LzcuXG/SPCP/Web/Temperature/StuTemperatureInfo','Accept-Encoding':'gzip,deflate','Accept-Language':'zh-CN,en-US;q=0.8'}
 	cookie = {'ASP.NET_SessionId':'ixwwtqnul5bnlgi40yz3vnsv','CenterSoftWeb':'14B64F89DC93D38AD0A5108DF5B75EA0BB8950AC5C3C5CA5F557C461DEF97E1A58B2D45D1696FCFF63E5188F58F3022ECD46B5DF44F3656A56405394D3D01FDF1A94666D73ECE170AC3A88D3A33E490F36442A7902B4D38DC6AB5AC8C3F0E01FA8651EF02C1E0E2649B61540C5129A2D39C248857337483E85FA13213721ED4B6DE9FA132F94EAE647629F5DE4329DEC9C334CBA6C9C8A4E181594124CB08678FD0FD2B2867C6A9EA7886102AB84500E4C6C310E2DDB5BD8981034E6AFA43C4C'}
 	Data = {'TimeNowHour':ho,'TimeNowMinute':mi,'Temper1':te1,'Temper2':te2,'ReSubmiteFlag':'05e9e185-8172-4876-a267-ad626658b76c'}
